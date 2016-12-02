@@ -1,9 +1,9 @@
-.think img {
-  width: 80%;
-}
 .think {
   width: 250px;
   text-align: center;
+}
+.think img {
+  width: 80%;
 }
 .navbar-left {
   padding-top: 10px;
@@ -13,11 +13,39 @@
 .navbar-right {
   padding-right: 20px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+/*div {
+  background-color: red;
+}*/
+.leftContent {
+  width: 68%;
+  height: 100vh;
+  float: left;
+  background-color: red;
+}
+.rightTop {
+  height: 49vh;
+  width: 30%;
+  float: left;
+  background-color: blue;
+}
+.rightBottom {
+  height: 49vh;
+  width: 30%;
+  float: left;
+  background-color: yellow;
+}
+
 @media screen and (max-width: 1022px) {
   .visible {
     display: none !important;
   }
 }
+
 @media screen and (max-width: 768px) {
   ul.navbar-left{
     margin-right: 0;
@@ -32,16 +60,15 @@
   .leftContent {
   width: 100%;
   height: 60vh;
-  margin-bottom: 2vh;
+
   }
   .rightTop {
   height: 38vh;
-  width: 49%;
-  margin-right: 2%;
+  width: 50%;
   }
   .rightBottom {
   height: 38vh;
-  width: 49%;
+  width: 50%;
   }
 }
 
@@ -49,12 +76,10 @@
   .leftContent {
     width: 100%;
     height: 60vh;
-    margin-bottom: 2vh;
   }
   .rightTop {
     height: 25vh;
     width: 100%;
-    margin-bottom: 2vh;
   }
   .rightBottom {
     height: 25vh;
