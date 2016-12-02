@@ -24,18 +24,39 @@
 /*Content Styling*/
 .leftContent {
   width: 65%;
-  height: 100vh;
+  height: 60vh;
   float: left;
   background-color: red;
+  background-image: url(../img/shopping.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.leftImage {
+  width: 100%;
+  height: 100%;
+}
+.leftText {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  background-color: rgb(38,50,56);
+  color: #FFF;
+  padding: 20px;
+}
+.leftTex
+.leftImage img{
+  width: 100%;
+  height:100%;
 }
 .rightTop {
-  height: 49vh;
+  height: 30vh;
   width: 35%;
   float: left;
   background-color: blue;
 }
 .rightBottom {
-  height: 49vh;
+  height: 30vh;
   width: 35%;
   float: left;
   background-color: yellow;
@@ -60,12 +81,11 @@
     float: left;
   }
   .navbar-right li {
-    float: right;
+    display: inline-block;
   }
   .leftContent {
   width: 100%;
   height: 50vh;
-
   }
   .rightTop {
   height: 25vh;
