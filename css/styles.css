@@ -56,6 +56,7 @@ body {
   background-color: rgb(38,50,56);
   color: #FFF;
   padding: 35px;
+  width: 300px;;
 }
 .leftText h2 {
   font-weight: 100;
@@ -65,10 +66,6 @@ body {
   height: 350px;
   width: 35%;
   float: left;
-  /*background-color: #FFF;*/
-}
-.rightTop .rightImage {
-  height: 60%;
 }
 .rightTop img, .rightBottom img {
   height: 70%;
@@ -93,7 +90,13 @@ body {
 .rightBottom .rightText {
   background-color: rgb(0,150,136);
 }
-
+.rightText a, .leftText a {
+  color: #FFF;
+  opacity: 0.8;
+}
+.rightText a:hover, .leftText a:hover {
+  color: #FFF;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 1022px) {
@@ -137,17 +140,34 @@ body {
 @media screen and (max-width: 615px) {
   .leftContent {
     width: 100%;
-    height: 40vh;
+    height: 500px;
   }
   .rightTop {
-    height: 25vh;
+    height: 400px;
     width: 100%;
   }
   .rightBottom {
-    height: 25vh;
+    height: 400px;
     width: 100%;
   }
-  /*.navbar-right li {
-    display: inline-block;
-  }*/
+  .leftText {
+    position: absolute;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgb(38,50,56);
+    color: #FFF;
+    padding: 35px;
+  }
+  .small-invisible {
+    display: none;
+  }
+  .rightTop img, .rightBottom img {
+    height: 70%;
+    width: 100%;
+    margin-right: 0;
+    object-fit: cover;
+    object-position: right;
+  }
 }
