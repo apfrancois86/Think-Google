@@ -20,6 +20,7 @@ li a:hover {
   background-color: #FFF;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 /*Navbar Styling*/
 .navbar {
@@ -40,6 +41,7 @@ li a:hover {
 }
 .navbar-left .visible {
   padding-top:6px;
+  cursor: pointer;
 }
 .navbar-right {
   padding-right: 20px;
@@ -82,7 +84,7 @@ li a:hover {
   float: left;
 }
 .rightTop img, .rightBottom img {
-  height: 70%;
+  height: 100%;
   width: 100%;
   margin-right: 0;
   object-fit: cover;
@@ -111,6 +113,26 @@ li a:hover {
 .rightText a:hover, .leftText a:hover {
   color: #FFF;
 }
+.zoomIn {
+transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-o-transition: all 1s ease;
+}
+.zoomIn:hover {
+  transform:scale(1.09);
+  -ms-transform:scale(1.09); /* IE 9 */
+  -moz-transform:scale(1.09); /* Firefox */
+  -webkit-transform:scale(1.09); /* Safari and Chrome */
+  -o-transform:scale(1.09); /* Opera */
+  opacity: 0.8;
+}
+.img-wrapper {
+  overflow: hidden;
+  height: 70%;
+}
+
 
 /*Media Queries*/
 @media screen and (max-width: 1080px) {
@@ -138,6 +160,14 @@ li a:hover {
   height: 400px;
   width: 50%;
   }
+  .zoomIn:hover {
+  transform:scale(1.0);
+  -ms-transform:scale(1.0); /* IE 9 */
+  -moz-transform:scale(1.0); /* Firefox */
+  -webkit-transform:scale(1.0); /* Safari and Chrome */
+  -o-transform:scale(1.0); /* Opera */
+  opacity: 1;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -195,7 +225,7 @@ li a:hover {
   .small-invisible {
     display: none;
   }
-  .rightTop img, .rightBottom img {
+  .img-wrapper {
     height: 120px;
     width: 25%;
     margin-right: 0;
@@ -216,7 +246,7 @@ li a:hover {
   .rightTop, .rightBottom {
     height: 100px;
   }
-  .rightTop img, .rightBottom img {
+  .img-wrapper {
     height: 100px;
     width: 35%;
     margin-right: 0;
